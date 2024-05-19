@@ -1,5 +1,21 @@
 <%- include("partials/header.ejs") %>
-<img src="<%= team.logo %>" alt="manchester united logo"/>
-<h1> The Red Devil HQ</h1>
-<p>Where fans meet Manchester United ...</p>
+<section class="title">
+    <div class="container">
+        <img src="<%= team.logo %>" alt="manchester united logo"/>
+        <h1> The Red Devil HQ</h1>
+        <div><p>Where fans meet Manchester United ...</p></div>
+    </div>
+</section>
+<section class="description">
+    <div class="container">
+        <div><p><%= team.description %></p></div>
+        <div><img src="<%= team.image1 %>" alt="manchester united logo"/></div>
+    </div>
+</section>
+        
+        
+    
+
+
+
 <%- include("partials/footer.ejs") %>

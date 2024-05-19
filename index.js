@@ -14,9 +14,10 @@ app.get("/", async (req, res) => {
     const response = await axios.get(`${API_URL}`);
     const result = response.data.teams[0];
     const teamData = {
-        logo : result.strTeamLogo
+        logo : result.strTeamLogo,
+        description: result.strDescriptionEN,
+        image1: result.strTeamFanart2
     }
-    console.log(teamData.logo);
     res.render("index.ejs", { team : teamData });
 });
 
