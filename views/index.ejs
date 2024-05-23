@@ -1,17 +1,11 @@
 <%- include("partials/header.ejs") %>
-<section class="title">
-    <div class="container">
-        <img src="<%= team.logo %>" alt="manchester united logo"/>
-        <h1> The Red Devil HQ</h1>
-        <div><p>Where fans meet Manchester United ...</p></div>
-    </div>
-</section>
-<section class="description">
-    <div class="container">
-        <div><p><%= team.description %></p></div>
-        <div><img src="<%= team.image1 %>" alt="manchester united logo"/></div>
-    </div>
-</section>
+<div class=" container title">
+    <div class="logo"><img class="logo" src="<%= team.logo %>" alt="manchester united logo"/></div>
+    <div class="heading"><h1> The Red Devil HQ</h1></div>
+    <div class="subheading"><h2>Where fans meet Manchester United ...</h2></div>
+    <div class="description"><p><%= team.description %></p></div>
+    <div class="image1"><img src="<%= team.image1 %>" alt="manchester united logo"/></div>
+</div>
         
         
     

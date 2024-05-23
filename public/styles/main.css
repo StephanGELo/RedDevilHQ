@@ -1,4 +1,62 @@
-.title {
-    background-image: linear-gradient(to top, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+.site-nav {
+    display: inline-block;
 }
 
+body {
+    margin:0;
+    padding: 0;
+    height:100vh;
+}
+
+.title {
+    background-image: linear-gradient(to bottom, #dbdcd7 0%, #dddcd7 24%, #e2c9cc 30%, #e7627d 46%, #b8235a 59%, #801357 71%, #3d1635 84%, #1c1a27 100%);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 300px 500px 1fr 1fr 1fr;
+    grid-template-rows: 300px 100px 1fr 1fr;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo {
+    text-align: left;
+    align-items: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 500px;
+    height: 250px;
+    /* border: 5px solid brown; */
+    /* border-radius: 45%; */
+
+}
+.heading {
+    grid-column: 3 / 7;
+    grid-row: 1 / 2;
+    font-size: 3rem;
+    /* text-align:center */
+}
+
+.subheading {
+    grid-column: 3 / span2;
+    grid-row: 1 / 2;
+    /* text-align: center; */
+    margin-top: 175px;
+    margin-left: 175px;
+}
+
+.description {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.image1 {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+}
+
+.image1 img {
+    height: 400px;
+    width: 600px;
+}
